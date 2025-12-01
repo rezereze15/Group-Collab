@@ -1,2 +1,29 @@
+*{
+    box-sizing: border-box;
+}
 
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #B8AFA6;
+    color: #333;
+}
+
+#home {
+    text-align: center;
+    padding: 50px;
+}
+
+
+.recipe-box img {
+    width:100%; 
+    border-radius: 10px;
+}
+
+.recipe-box h2 {
+    color: #443147;
+    padding-top: 10px;
+    margin-top: 0;
+}
 
