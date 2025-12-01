@@ -1,69 +1,151 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>ReCIpe Food WeebSite</title>
+    <title>Recipe Food Website</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background-color: #f2f2f2; color: #333;">
-
-    <!-- Header -->
-    <header style="background-color: #1a1a1a; color: #f2f2f2; padding: 30px 20px; text-align: center;">
-        <h1 style="margin: 0; font-size: 36px;">ReCIpe Food WeebSite</h1>
-        <p style="margin: 5px 0 0 0; color: #ccc;">Mga ulam na pwede ikaon</p>
-    </header>
+<body>
 
     <!-- Navigation -->
-    <nav style="background-color: #333; overflow: hidden; text-align: center;">
-        <a href="#" style="display: inline-block; color: #f2f2f2; padding: 14px 20px; text-decoration: none; font-weight: bold;">Home</a>
-        <a href="#" style="display: inline-block; color: #f2f2f2; padding: 14px 20px; text-decoration: none; font-weight: bold;">Recipes</a>
-        <a href="#" style="display: inline-block; color: #f2f2f2; padding: 14px 20px; text-decoration: none; font-weight: bold;">About</a>
-    </nav>
+    <!-- CSS Inline Style -->
+    <div style="display: flex; justify-content: space-between; align-items: center; background-color: #443147; padding: 10px 20px;">
+        
+        <!-- HEADER LEFT -->
+        <header style="color: #fcc7c1;">
+            <h1 style="margin: 0; font-size: 28px;">ReCIpe Food WeebSite</h1>
+            <p style="margin: 0; color: #ccc;">Mga ulam na pwede ikaon</p>
+        </header>
 
-     
-    <section class="recipe-section">
+        <!-- NAV RIGHT -->
+        <nav>
+            <a href="#" style="display: inline-block; color: #f2f2f2; padding: 14px 20px; text-decoration: none; font-weight: bold;">Home</a>
+            <a href="#" style="display: inline-block; color: #f2f2f2; padding: 14px 20px; text-decoration: none; font-weight: bold;">Recipes</a>
+            <a href="#" style="display: inline-block; color: #f2f2f2; padding: 14px 20px; text-decoration: none; font-weight: bold;">About</a>
+        </nav>
 
-    <!-- Adobo Box -->
-    <div class="recipe-box">
-        <h2>Chicken/Pork Adobo</h2>
-        <p><strong>Ingredients:</strong></p>
-        <ul>
-            <li>Chicken or pork</li>
-            <li>Soy sauce</li>
-            <li>Vinegar</li>
-            <li>Garlic</li>
-            <li>Bay leaves</li>
-            <li>Pepper</li>
-        </ul>
-        <p><strong>How to Cook:</strong></p>
-        <p>Hulaan mo</p>
     </div>
 
-    <!-- Kare-Kare Box -->
-    <div class="recipe-box">
-        <h2>Kare-Kare</h2>
-        <p><strong>Ingredients:</strong></p>
-        <ul>
-            <li>Oxtail or pork</li>
-            <li>Peanut butter</li>
-            <li>Bagoong</li>
-            <li>Vegetables (pechay, beans, eggplant)</li>
-        </ul>
-        <p><strong>How to Cook:</strong></p>
-        <p>DILI KO ALAM</p>
+    <div>
+        <section class="home">
+            <div id="home-top">
+                <h1>Welcome to Recipe Food Website</h1>
+                <p>
+                    Discover easy, delicious, and budget-friendly meals perfect for everyday cooking.
+                    Whether you're a beginner or a home-cooking pro, our recipes are simple, flavorful,
+                    and made using ingredients you can find anywhere.
+                </p>
+            </div>
+
+            <div id="home-bottom">
+                <h2>What You’ll Find Here</h2>
+                <ul style="list-style: none; padding: 0; line-height: 1.8;">
+                    <li>🍲 Simple everyday meals</li>
+                    <li>🥘 Comfort food favorites</li>
+                    <li>📖 Step-by-step cooking instructions</li>
+                    <li>🇵🇭 Recipes inspired by Pinoy home cooking</li>
+                </ul>
+            </div>
+        </section>
+        <!-- External CSS Style-->
+        <section class="recipe-section">
+            <!-- Adobo Box -->
+            <div class="recipe-box">
+                <div>
+                    <img src="image/adobo1.jpg" alt="Chicken Adobo">
+                </div>
+                <h2>Chicken/Pork Adobo</h2>
+                <p><strong>Ingredients:</strong></p>
+                <ul>
+                    <li>Chicken or pork</li>
+                    <li>Soy sauce</li>
+                    <li>Vinegar</li>
+                    <li>Garlic</li>
+                    <li>Bay leaves</li>
+                    <li>Pepper</li>
+                </ul>
+                <p><strong>How to Cook:</strong></p>
+                <p>Hulaan mo</p>
+            </div>
+            <!-- Kare-Kare Box -->
+            <div class="recipe-box">
+                <div>
+                    <img src="image/Karekare1.jpg" alt="Kare-Kare">
+                </div>
+                <h2>Kare-Kare</h2>
+                <p><strong>Ingredients:</strong></p>
+                <ul>
+                    <li>Oxtail or pork</li>
+                    <li>Peanut butter</li>
+                    <li>Bagoong</li>
+                    <li>Vegetables (pechay, beans, eggplant)</li>
+                </ul>
+                <p><strong>How to Cook:</strong></p>
+                <p>First Pre-Heat the pan.</p>
+            </div>
+            <!-- Menudo Model Box -->
+            <div class="recipe-box">
+                <div>
+                    <img src="image/menudo.jpg" alt="Menudo">
+                </div>
+                <h2>Menudo</h2>
+                <p><strong>Ingredients:</strong></p>
+                <ul>
+                    <li>Pork Kasim</li>
+                    <li>Soy Sauce</li>
+                    <li>Tomato Paste</li>
+                    <li>Tomato Sauce</li>
+                    <li>Peppercorns</li>
+                </ul>
+                <p><strong>How to Cook:</strong></p>
+                <p>First Pre-Heat the pan.</p>
+            </div>
+        </section>
+
+        <section id="about" style="padding: 40px;">
+            <h1>About Us</h1>
+
+            <p style="max-width: 700px; margin-top: 10px;">
+                Recipe Food Website is a small cooking project created to help people enjoy
+                home-cooked meals without stress. We know life gets busy, and not everyone has the time
+                to prepare complicated dishes — so we focus on simple recipes that taste great and are
+                easy to follow.
+            </p>
+
+            <h2 style="margin-top: 20px;">Our Mission</h2>
+            <p style="max-width: 700px;">
+                Our goal is to make cooking enjoyable and accessible for everyone. Whether you're preparing
+                food for yourself or for the whole family, we want to give you dishes that are affordable,
+                fun to make, and satisfying to eat.
+            </p>
+
+            <h2 style="margin-top: 20px;">What We Offer</h2>
+            <ul style="line-height: 1.8;">
+                <li>✓ Beginner-friendly recipes</li>
+                <li>✓ Clear steps and easy-to-find ingredients</li>
+                <li>✓ A mix of Pinoy dishes and comfort meals</li>
+                <li>✓ Tips to make cooking simpler and more enjoyable</li>
+            </ul>
+
+            <p style="max-width: 700px; margin-top: 15px;">
+                Thanks for visiting our page! We hope our recipes inspire you to cook more,
+                eat well, and enjoy every meal ❤️.
+            </p>
+        </section>
     </div>
-
-</section>
-
-
+    <footer>
+        <p>&copy; 2025 ReCIpe Food WeebSite. All rights reserved.</p>
+    </footer>
 </body>
 </html>
 
+<!-- CSS Internal Style -->
 <style>
     dsadsadsa
     .recipe-section {
         padding: 20px;
         display: flex;
         justify-content: center;
-        gap: 20px;
+        gap: 100px;
         flex-wrap: wrap;
     }
 
@@ -72,11 +154,9 @@
         width: 300px;
         padding: 20px;
         border-radius: 10px;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        box-shadow: 0 2px 8px rgba(0,0,0,0.3);
     }
 
-    .recipe-box h2 {
-        margin-top: 0;
-    }
+
 
 </style>
