@@ -1,47 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PINASarap!</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/svg+xml" href="image/PINASarap_Icon.svg">
 </head>
-<body>
 
+<body>
     <!-- Navigation -->
     <!-- CSS Inline Style -->
-    <div style="display: flex; justify-content: space-between; align-items: center; background-color: #443147; padding: 10px 20px;">
-        
-        <header style="color: #fcc7c1;">
-            <h1 style="margin: 0; font-size: 28px;">PINASarap!</h1>
-            <p style="margin: 0; color: #ccc;">Mga ulam na pwede ikaon</p>
+    <div style="display: flex; justify-content: space-between; align-items: center; background-color: #722F37; padding: 10px 40px;">
+        <header style="color: #EFDFBB; display: flex; align-items: center; gap: 10px;">
+            <img src="image/PINASarap_Icon.svg" alt="PINASarap! Logo" style="height: 50px;">
+            <div style="display: flex; flex-direction: column; justify-content: center;">
+                <h1 style="margin: 0; font-size: 28px;">PINASarap!</h1>
+                <p style="margin: 0; color: #f2f2f2; font-size: 12px;">Mga putahe ni Aling Bebang</p>
+            </div>
         </header>
 
-        <nav>
-            <a href="#" style="display: inline-block; color: #f2f2f2; padding: 14px 20px; text-decoration: none; font-weight: bold;">Home</a>
-            <a href="#" style="display: inline-block; color: #f2f2f2; padding: 14px 20px; text-decoration: none; font-weight: bold;">Recipes</a>
-            <a href="#" style="display: inline-block; color: #f2f2f2; padding: 14px 20px; text-decoration: none; font-weight: bold;">About</a>
+        <nav id="mainNav">
+            <a href="#home" style="display: inline-block; color: #EFDFBB; padding: 14px 20px; text-decoration: none; font-weight: bold;">Home</a>
+            <a href="#recipe" style="display: inline-block; color: #EFDFBB; padding: 14px 20px; text-decoration: none; font-weight: bold;">Recipes</a>
+            <a href="#about" style="display: inline-block; color: #EFDFBB; padding: 14px 20px; text-decoration: none; font-weight: bold;">About</a>
         </nav>
-
     </div>
 
     <div>
         <section class="home">
-            <div id="home-top">
+            <div id="home_msg">
                 <h1>Welcome to <span class="webname">PINASarap!</span></h1>
                 <p>
-                    Discover easy, delicious, and budget-friendly meals perfect for everyday cooking.
+                    Discover easy, delicious, and budget-friendly Filipino meals perfect for everyday cooking.
                     Whether you're a beginner or a home-cooking pro, our recipes are simple, flavorful,
                     and made using ingredients you can find anywhere.
                 </p>
-            </div>
-
-            <div id="home-bottom">
-                <h2>What You’ll Find Here</h2>
-                <ul style="list-style: none; padding: 0; line-height: 1.8;">
-                    <li>🍲 Simple everyday meals</li>
-                    <li>🥘 Comfort food favorites</li>
-                    <li>📖 Step-by-step cooking instructions</li>
-                    <li>🇵🇭 Recipes inspired by Pinoy home cooking</li>
-                </ul>
             </div>
 
         </section>
@@ -55,17 +49,18 @@
                         <img src="image/adobo1.jpg" alt="Chicken Adobo">
                     </div>
                     <h2>Chicken/Pork Adobo</h2>
-                    <p><strong>Ingredients:</strong></p>
+                    <h4>Ingredients:</h4>
                     <ul>
                         <li>Chicken or pork</li>
                         <li>Soy sauce</li>
                         <li>Vinegar</li>
                         <li>Garlic</li>
                         <li>Bay leaves</li>
-                        <li>Pepper</li>
+                        <li>Peppercorns</li>
                     </ul>
-                    <p><strong>How to Cook:</strong></p>
-                    <p>Hulaan mo</p>
+                    <br>
+                    <hr>
+                    <p><strong>Click me for the whole tutorial →</strong></p>
                 </div>
         
                 <div class="recipe-box">
@@ -73,15 +68,17 @@
                         <img src="image/Karekare1.jpg" alt="Kare-Kare">
                     </div>
                     <h2>Kare-Kare</h2>
-                    <p><strong>Ingredients:</strong></p>
+                    <h4>Ingredients:</h4>
                     <ul>
-                        <li>Oxtail or pork</li>
+                        <li>Oxtail or Pork</li>
                         <li>Peanut butter</li>
                         <li>Bagoong</li>
+                        <li>Garlic and Onion</li>
                         <li>Vegetables (pechay, beans, eggplant)</li>
                     </ul>
-                    <p><strong>How to Cook:</strong></p>
-                    <p>First Pre-Heat the pan.</p>
+                    <br>
+                    <hr>
+                    <p><strong>Click me for the whole tutorial →</strong></p>
                 </div>
         
                 <div class="recipe-box">
@@ -89,16 +86,19 @@
                         <img src="image/menudo.jpg" alt="Menudo">
                     </div>
                     <h2>Menudo</h2>
-                    <p><strong>Ingredients:</strong></p>
+                    <h4>Ingredients:</h4>
                     <ul>
                         <li>Pork Kasim</li>
+                        <li>Pork Liver</li>
                         <li>Soy Sauce</li>
                         <li>Tomato Paste</li>
                         <li>Tomato Sauce</li>
                         <li>Peppercorns</li>
                     </ul>
-                    <p><strong>How to Cook:</strong></p>
-                    <p>First Pre-Heat the pan.</p>
+                    <br>
+                    <hr>
+                    <p><strong>Click me for the whole tutorial →</strong></p>
+
                 </div>
             </div>
         </section>
@@ -110,10 +110,9 @@
                 <div class="about-section">
                     <h2>About</h2>
                     <p>
-                        Recipe Food Website is a small cooking project created to help people enjoy
+                        PINASarap! is a small cooking project created to help people enjoy filipino
                         home-cooked meals without stress. We know life gets busy, and not everyone has the time
-                        to prepare complicated dishes — so we focus on simple recipes that taste great and are
-                        easy to follow.
+                        to prepare complicated dishes.
                     </p>
                 </div>
 
@@ -159,7 +158,7 @@
     }
 
     .recipe-box {
-        background-color: white;
+        background-color: #EFE9E0;
         width: 300px;
         padding: 20px;
         border-radius: 10px;
@@ -174,5 +173,9 @@
         transition-timing-function: ease-out;
         transform: translateY(-8px) scale(1.03);
         box-shadow: 0 6px 18px rgba(0,0,0,0.35);
-}
+    }
+
+    .recipe-box p {
+        text-align: right;
+    }
 </style>
